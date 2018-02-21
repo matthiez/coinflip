@@ -1,0 +1,371 @@
+.glyphicon-spin {
+    -webkit-animation: ajax-loader 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes ajax-loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+/*Inventory Start*/
+#inventory {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+#inventory .item-container {
+    cursor: copy;
+    background-color: #f7f7f9;
+    margin-top: 1px;
+}
+#inventory .selected {
+    background: #ffebee;
+}
+#inventory .value {
+    border-right:  1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    font-size:     1.1em;
+}
+#inventory .name {
+    font-size:     1.1em;
+    margin-bottom: 5px;
+}
+#inventory .helper img {
+    margin-top: -4px;
+    margin-left: 1px;
+}
+#inventory .rarity {
+    height: 5px;
+}
+#inventory .rarity.base {
+    background-color: #000;
+}
+#inventory .rarity.consumer {
+    background-color: #c0c0c0;
+}
+#inventory .rarity.industrial {
+    background-color: #99ccff;
+}
+#inventory .rarity.mil-spec {
+    background-color: #0000ff;
+}
+#inventory .rarity.restricted {
+    background-color: #800080;
+}
+#inventory .rarity.classified {
+    background-color: #ff00ff;
+}
+#inventory .rarity.covert {
+    background-color: #ff0000;
+}
+#inventory .rarity.rare {
+    background-color: #ffcc00;
+}
+#inventory .rarity.contraband {
+    background-color: #ffcc99;
+}
+/*Inventory End*/
+#main {
+}
+.pointer {
+    cursor: pointer;
+}
+.wide {
+    width: 100%;
+}
+#logout, .hide, #new_coinflip, #coinflip {
+    display: none;
+}
+.text-center {
+    text-align: center;
+}
+.coin-side {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.coin-side.selected {
+    border: 1px solid red;
+}
+#coinflips thead tr {
+    background-color: #eeeeee;
+}
+.play {
+    padding: 0 0 0 0;
+    background-color: #fff;
+    font-weight: 600;
+}
+#coinflip_container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#coin {
+    position: relative;
+    width: 200px;
+    transform-style: preserve-3d;
+}
+#coin .front,
+#coin .back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#coin .front {
+    transform: translateZ(1px);
+    border-radius: 50%;
+    background-image: url('https://static.csgocards.net/coinflip/img/anti.png');
+    background-size: cover;
+    display: block;
+}
+#coin .back {
+    transform: translateZ(-1px) rotateY(180deg);
+    border-radius: 50%;
+    background-image: url('https://static.csgocards.net/coinflip/img/terror.png');
+    background-size: cover;
+    display: block;
+}
+#coin.animation900 {
+    -webkit-animation: rotate900 3s linear forwards;
+    animation: rotate900 3s linear forwards;
+}
+#coin.animation1080 {
+    -webkit-animation: rotate1080 3s linear forwards;
+    animation: rotate1080 3s linear forwards;
+}
+#coin.animation1260 {
+    -webkit-animation: rotate1260 3s linear forwards;
+    animation: rotate1260 3s linear forwards;
+}
+#coin.animation1440 {
+    -webkit-animation: rotate1440 3s linear forwards;
+    animation: rotate1440 3s linear forwards;
+}
+#coin.animation1620 {
+    -webkit-animation: rotate1620 3s linear forwards;
+    animation: rotate1620 3s linear forwards;
+}
+
+#coin.animation1800 {
+    -webkit-animation: rotate1800 3s linear forwards;
+    animation: rotate1800 3s linear forwards;
+}
+#coin.animation1980 {
+    -webkit-animation: rotate1980 3s linear forwards;
+    animation: rotate1980 3s linear forwards;
+}
+#coin.animation2160 {
+    -webkit-animation: rotate2160 3s linear forwards;
+    animation: rotate2160 3s linear forwards;
+}
+@-webkit-keyframes rotate900 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(900deg);
+        -moz-transform: rotateY(900deg);
+        transform: rotateY(900deg);
+    }
+}
+@keyframes rotate900 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(900deg);
+        -moz-transform: rotateY(900deg);
+        transform: rotateY(900deg);
+    }
+}
+@-webkit-keyframes rotate1080 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1080deg);
+        -moz-transform: rotateY(1080deg);
+        transform: rotateY(1080deg);
+    }
+}
+@keyframes rotate1080 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1080deg);
+        -moz-transform: rotateY(1080deg);
+        transform: rotateY(1080deg);
+    }
+}
+@-webkit-keyframes rotate1260 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1260deg);
+        -moz-transform: rotateY(1260deg);
+        transform: rotateY(1260deg);
+    }
+}
+@keyframes rotate1260 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1260deg);
+        -moz-transform: rotateY(1260deg);
+        transform: rotateY(1260deg);
+    }
+}
+@-webkit-keyframes rotate1440 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1440deg);
+        -moz-transform: rotateY(1440deg);
+        transform: rotateY(1440deg);
+    }
+}
+@keyframes rotate1440 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1440deg);
+        -moz-transform: rotateY(1440deg);
+        transform: rotateY(1440deg);
+    }
+}
+@-webkit-keyframes rotate1620 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1620deg);
+        -moz-transform: rotateY(1620deg);
+        transform: rotateY(1620deg);
+    }
+}
+@keyframes rotate1620 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1620deg);
+        -moz-transform: rotateY(1620deg);
+        transform: rotateY(1620deg);
+    }
+}
+@-webkit-keyframes rotate1800 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1800deg);
+        -moz-transform: rotateY(1800deg);
+        transform: rotateY(1800deg);
+    }
+}
+@keyframes rotate1800 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1800deg);
+        -moz-transform: rotateY(1800deg);
+        transform: rotateY(1800deg);
+    }
+}
+
+@-webkit-keyframes rotate1980 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1980deg);
+        -moz-transform: rotateY(1980deg);
+        transform: rotateY(1980deg);
+    }
+}
+@keyframes rotate1980 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(1980deg);
+        -moz-transform: rotateY(1980deg);
+        transform: rotateY(1980deg);
+    }
+}
+@-webkit-keyframes rotate2160 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(2160deg);
+        -moz-transform: rotateY(2160deg);
+        transform: rotateY(2160deg);
+    }
+}
+@keyframes rotate2160 {
+    from {
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateY(2160deg);
+        -moz-transform: rotateY(2160deg);
+        transform: rotateY(2160deg);
+    }
+}
