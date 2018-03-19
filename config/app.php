@@ -171,7 +171,6 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Invisnik\LaravelSteamAuth\SteamServiceProvider::class,
         Invisnik\LaravelSteamInventory\ServiceProvider::class,
-        Spatie\CookieConsent\CookieConsentServiceProvider::class,
 
         /*
          * Application Service Providers...

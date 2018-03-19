@@ -57,23 +57,21 @@
             @yield('content')
         </div>
     </div>
-    @include('cookieConsent::index')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
     <script src="https://static.csgocards.net/js/noty3.0.1/noty.min.js"></script>
     <script src='https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.js'></script>
-
     <script>
         'use strict';
-        let App = {
+        const App = {
             csrfToken: '{!! csrf_token() !!}',
             debug: true,
             socket: io(':3000')
         };
-        let User = {!! json_encode($user) !!};
-        let Settings = {!! json_encode($settings) !!};
+        const User = {!! json_encode($user) !!};
+        const Settings = {!! json_encode($settings) !!};
     </script>
 
     <script src="{{ asset('js/help.js') }}"></script>
